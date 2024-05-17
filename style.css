@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.spotify__logo{
+    margin-right: 240px;
+    margin-bottom: 0;
+    color: #1fae51;
+}
+
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: #4b7d5e;
+    font-family: "Poppins", sans-serif;
+    backdrop-filter: blur(20px);
+}
+
+
+
+.swiper-slide.active {
+    border-bottom: 5px solid #269d50;
+    background: #ece7de;
+    color: #000000;
+    transition: 1s ease;
+}
+
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 550px;
+    padding: 15px;
+}
+
+.container{
+    box-shadow: -.05rem 3px 20px 5px rgb(31, 42, 35);
+}
+
+
+h1 {
+    color: black;
+    font-size: 25px;
+    padding-top: 5px;
+    font-family: poppins;
+   
+}
+
+
+button {
+    background: #427153;
+    color: #fff;
+    width: 70%;
+    height: 50px;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 8px;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: .3s ease;
+    box-shadow: 1px 2px 4px rgb(12, 43, 21);
+}
+
+
+button:hover {
+    background: #205d34;
+}
+
+.swiper{
+max-width: 100%;   
+max-height: 100%;
+padding-top: 2rem;
+}
+
+
+.swiper-wrapper {
+    width: 300px;
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+
+.swiper-slide {
+    border-radius: 10px;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #456657;
+    color: rgb(255, 255, 255);
+    height: 250px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    margin-top: 120px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: rgb(63, 169, 72);
+}
+.swiper-button-next:hover{
+    transform: translateX(.5rem);
+}
+
+.swiper-button-prev:hover{
+    transform: translateX(-.5rem);
+}
+
+.swiper-pagination {
+    margin-bottom: 10px;
+    display: block;
+    align-items: center;
+}
+
+.swiper-pagination-bullet{
+    background-color: #136f33;
+}
